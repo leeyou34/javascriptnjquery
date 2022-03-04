@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>growth_test</title>
+    <script>
+        var num1 = 10;
+        var num2 = 20;
+        var result;
+
+        num1--;
+        document.write(num1, "<br>"); // 9
+
+        num1++;
+        document.write(num1, "<br>"); // 10; 이미 num1변수가 이 차례가 왔을때 9가 되었음으로.
+
+        result = num2++;
+        document.write(result, "<br>"); // result: 20, num2:21
+        document.write(num2, "<br>");
+
+        result = ++num2;
+        document.write(result, "<br>"); // result는 21인데.. 1이 증가되는 ++연산자가 붙었으니.. result는 22 이고. 여기서 새롭게 num2는 22로 데이터값이 변경된다.
+        document.write(num2, "<br>");
+</script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--
+    증감 연산자.
+
+    숫자형 데이터를 1씩 증가와 감소시키는 연산자가 존재한다.  앞서 배운 연산자 종류와 달리
+    피 연산자가 한개만 필요한 연산자이다. 그리고 증감 연산자는 변수의 어느위치에 오느냐에 따라 결과값이 달라진다.
+
+    var a = b++
+    => b의 값을 1만큼 증가되어 실행되어 증가된 b값이 a에 대입되어 실행한다.
+
+    var a = ++b
+    => a가 실행되고 b의 값을 1만큼 증가가 실행된다.
+
+-->
