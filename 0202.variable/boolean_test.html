@@ -4,20 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>boolean_test.html</title>
 </head>
 <script>
+    //boolean_test started
     var a = true;
     var b = false;
-    var c = 10>5;
-    var d = Boolean(null);
-
+    var c = 10>5; //true
+    var d = Boolean(null); //false
+    
     document.write(a, "<br>");
     document.write(b, "<br>");
     document.write(c, "<br>");
     document.write(d, "<br>");
+    //boolean_test ended
+
+
+    //null & undefined data started
+    var s;
+    var t = "hello";
+    t = null;
+    
+    document.write(s, "<br>");
+    document.write(t, "<br>");
+    //null & undefiend data ended
+
 </script>
 <body>
-    
+
 </body>
 </html>
+
+<!--
+    Boolean method에 데이터를 입력시, true or false로 답을 반환합니다.
+    Boolean method는 0, null, undefined, 그리고 빈 문자 " "를 제외한 모든 데이터에 true값을 반환합니다.
+
+    예를들면
+
+    var s;
+    var t=hello;
+    t = null;
+
+    crt + art + o 를 눌러 chrome으로 확인 경우, 
+    s 라는 변수는 아무값도 선언되어있지 아니되어 변수가 undefined로 되어있다.
+    한편 t 변수는 hello라는 변수로 선언되었지만, 바로 이어지는 변수에 대한 추가 설명에. 
+    t는 곧 null이라고 다시 재 선언되었기에. t 변수에 저장된 hello 데이터는 비워지고 null로 표기된다.
+
+-->
