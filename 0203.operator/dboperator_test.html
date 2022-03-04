@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dboperator</title>
+    <script>
+        //대입연산자: 연산된 데이터를 저장할 때 사용한다.
+        var num1 = 10;
+        var num2 = 3;
+        
+        num1+=num2;
+        document.write(num1, "<br>");
+
+        num1-=num2;
+        document.write(num1, "<br>");
+
+        num1*=num2;
+        document.write(num1, "<br>");
+
+        num1/=num2;
+        document.write(num1, "<br>");
+
+        num1%=num2;
+        document.write(num1, "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--
+    대입 연산자에서...
+    num1+=num2 는 num1= num1+num2 를 줄인 표기법이다. 즉 기존에 선언된 num1, num2값을 더하면 새로운 값이 num1에 채워진다. (13)
+    그리고 이 값은 지워지지 않고.
+    num1-=num2를 이용해서 출력하면.. num1에 13이 새로 데이터가 들어왔고, 기존 3이라는 숫자 데이터를 가지고 있는 num2가 빼기 연산을 한다 (10)
+
+    곱셉, 나눗셈 그리고 % 몫까지 num1에는 지속적으로 값이 변동되어 document.write(num1)을 출력할때마다 매번 num1에 다른 값 데이터가 출력 된다.
+
+-->
