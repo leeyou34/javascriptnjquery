@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elseif_1_test.html</title>
+    <!--
+        다음은  질의응답 창을 이용하여,
+        "현재는 몇 월입니까?"를 묻고, else if문을 사용해
+        현제 월에 해당하는 계절과 관련된 문구가 출력되도록 하라.
+    -->
+    <script>
+        var question=confirm("지금이 몇월인지 테스트 하시겠습니까?");
+        
+        if(question){
+            var result = prompt("현재는 몇 월입니까? 아라비아 숫자로 표기하세요", "0");
+
+            if(result>=3 && result<=5){
+                document.write("현재는 따뜻한 봄 입니다.")
+            } else if (result>=6 && result<=8){
+                document.write("현재는 더운 여름이네요~.");
+            } else if (result>=9 && result<=11){
+                document.write("현재는 천고마비의 가을입니다.");
+            } else if (result>=1 && result<=2){
+                document.write("현재는 추운 겨울입니다.");
+            } else if (result==12){
+                document.write("현재는 추운 겨울입니다.");
+            } else{
+                document.write("1~12외에 숫자를 지닌 달은 달력에 없습니다.");
+            }
+        } else {
+            document.write("생각이 바뀌시면 다시 시도하셔요~");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--
+    confirm, prompt, write 메서드를 이용하여 if, elseif, else 조건문으로 
+    현재 몇월인지 파악하는 solution을 만들었다.
+
+    여기서 안타깝게도, 겨울을 표현하는 부분에서 연산자로 12, 1, 2 숫자가 기입되면
+    겨울이라고 표기하는게 어려워서 else if 조건문을 하나 더 넣어서
+    겨울을 표기했다.
+
+    그래도 미리 메서드 두개가 있었기에 중첩 if문을 사용할 수 있었다.
+
+-->
