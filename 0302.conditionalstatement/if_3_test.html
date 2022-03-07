@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If_3.test.html</title>
+    <!--
+        방문자가 질의응답 창에 이름을 입력하지 않으면 
+        기본 응답값인 빈 문자 ""가 변수에 저장되어 조건식에 false 값을 리턴하고
+        그 결과 문장을 출력하지 않게 해라.
+
+    -->
+    <script>
+        var name = prompt("please neter your name", "");
+
+        if (name != ""){
+            document.write(name+" welcome!");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--
+    교과서 경우, 
+    <script>
+        var userName = prompt("방문자의 이름은?", "");
+
+        if(userName) {
+            document.write(userName+"님! 반갑습니다! 방문을 환영합니다.");
+        }
+    </script>
+-->

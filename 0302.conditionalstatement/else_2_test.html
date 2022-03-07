@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else_2_test</title>
+    <!--
+        확인/취소 창의 기본 사용법.
+
+        confirm() 매서드를 사용한다. 
+        confirm은 객체.
+
+        다음은 confirm() 메서드를 사용해 확인/취소 창을 나타내어
+        회원 탈퇴 여부를 묻는 창을 만들어라.
+    -->
+    <script>
+        var result = confirm("Do you like to delete the user account?", "");
+
+        if (result) {
+            document.write("your account has been deleted.");
+        } else {
+            document.write("your request has been canceled and your account still exists");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
