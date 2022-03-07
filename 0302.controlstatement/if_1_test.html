@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if statement</title>
+    <!--
+        방문자로부터 입력받은 걸음 수를 조건문으로 만들고, 걸음수가 10,000보 이상일 경우에만 결과를 출력
+    -->
+    <script>
+        var walkAmount = prompt("please type your amount of steps you walk in daily", "0");
+        if(walkAmount>=10000) {
+            document.write("you had more than 10000 steps.","<br>", "this proves that you care about your health!","<br>");
+        } else {
+            document.write("For your health concern, please start excercise.","<br>");
+        }
+        document.write("===========End==========");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--
+    교과서에서는
+    <script>
+        var walkAmount = prompt("당신의 하루 걷는 양은 몇 보인가요?","0");
+
+        if (walkAmount>=10000) {
+            document.write("좋은 습관을 지니고 계시는군요!!", "<br>");
+        }
+        document.write("=============End============");
+    </script>
+-->
