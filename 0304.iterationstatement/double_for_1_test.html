@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double_for_1_test.html</title>
+    <!--
+        중첩 for문을 사용하여 1행 1열부터 3행 2열까지 출력하라.
+        바깥쪽 for문은 행만큼 증가하고
+        안쪽 for문은 열만큼 증가한다.
+    -->
+    <script>
+        for(var j=1; j<=3;j++){ // 바깥쪽 for문
+            for(var i=1; i<=2;i++){ //안쪽 for문
+              document.write(j+"행"+i+"열"+"<br>");  
+            }
+            document.write("<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
