@@ -1,0 +1,13 @@
+javascript의 객체는 크게 내장 객체, 브라우저 객체 모델(BOM, Browser Object Model),
+문서 객체 모델(DOM, Document Object Model)로 3가지로 나뉠 수 있다.
+
+1. 내장객체는. String, Date, Array, Math 객체 등이 있다.
+예를 들면 Date객체를 생성하여 오늘 날짜를 알려주는 getDate 메서드가 있다.
+
+2. 브라우저 객체는 window, screen, location, history, navigator 등이 있다.
+참고로 window는 document와 location 객체의 상위 객체이다.
+
+3. 문서 객체 모델
+문서 객체 모델(DOM)은 HTML 문서 구조를 말한다.
+최상위 객체는 html이 있으며. 하위 객체로는 head, body가 존재한다.
+
