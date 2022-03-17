@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string_ob2_test.html</title>
+    <!--
+        방문자로부터 이름을 영문으로 입력받은 후 방문자가 영문 이름을 소문자로 했을때 
+        대문자로 바꿔 출력한다.
+        또한 방문자로부터 연락처를 입력받은 후 정보가 노출 되지 않도록 전화번호 뒤의 
+        네 자리는 * 출력
+    -->
+    <script>
+        var userName = prompt("당신의 영문 이름은?", "");
+
+        var upperName = userName.toUpperCase();
+        document.write(upperName, "<br>");
+
+        var userNum = prompt("당신의 연락처는?", "");
+        var result = userNum.substring(0, userNum.length-4)+ "****";
+        document.write(result, "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
